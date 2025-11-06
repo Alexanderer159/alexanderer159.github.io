@@ -38,7 +38,7 @@ a {
 
 .name{
   position: relative;
-  font-size: 5em;
+  font-size: 6em;
   color: rgb(30,30,30);
   animation: backgroundHighlight 7s 1s ease-in-out forwards;
 }
@@ -62,11 +62,11 @@ a {
 .devtext{
   font-size: 1.3em;
   overflow: hidden;
-  border-right: .15em solid cyan;
+  border-right: .15em solid transparent;
   white-space: nowrap;
   margin: 0;
   width: 0;
-  animation: typeWriter 3s 8.5s steps(40, end) forwards, blinkingLine 750ms step-end infinite;
+  animation: typeWriter 3s 8.5s steps(40, end) forwards, blinkingLine 750ms 8s step-end 7;
 }
 
 .buttonCV{
@@ -161,8 +161,8 @@ a {
 }
 
 @keyframes blinkingLine{
-  from, to { border-color: transparent }
-  50% { border-color: cyan; }
+  from, to { border-color: cyan }
+  50% { border-color: transparent; }
 }
 
 @keyframes arrowAppears{
@@ -231,7 +231,7 @@ a {
 
 @keyframes backgroundHighlight {
   0%{
-    font-size: 5em;
+    font-size: 6em;
     color: transparent;
     background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-color: transparent;
@@ -241,51 +241,38 @@ a {
     background-clip: text;
   }
   10% {
-    font-size: 5.5em;
     color: transparent;
     background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 50% 100%;
     background-clip: text;
-    transform: scale(1.02, 0.98);
   }
   20%{
-    font-size: 5.25em;
     color: transparent;
     background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 25% 100%;
     background-clip: text;
-    transform: scale(0.98, 1.02);
   }
   30%{
-    font-size: 5.75em;
     color: transparent;
     background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 75% 100%;
     background-clip: text;
-    transform: scale(1.02, 0.98);
   }
   40%{
-    font-size: 5.5em;
     color: transparent;
     background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: left center;
-    background-size: 50% 100%;
     background-clip: text;
-    transform: scale(0.98, 1.02);
   }
   50%{
-    font-size: 6.5em;
     color: transparent;
     background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-color: transparent;
@@ -293,10 +280,8 @@ a {
     background-position: left center;
     background-size: 100% 100%;
     background-clip: text;
-    transform: scale(1.1, 1.1);
   }
   60%{
-    font-size: 6em;
     color: transparent;
     background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-color: white;
@@ -306,7 +291,6 @@ a {
     background-clip: text;
   }
   70%{
-    font-size: 6em;
     color: transparent;
     background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-color: white;
@@ -315,7 +299,6 @@ a {
     background-clip: text;
   }
   80%{
-    font-size: 6em;
     color: transparent;
     background-image: linear-gradient(90deg, rgb(13, 202, 240),  rgb(0, 255, 136), rgb(13, 202, 240));
     background-color: white;
@@ -324,7 +307,6 @@ a {
     background-clip: text;
   }
   90%{
-    font-size: 6em;
     color: transparent;
     background-color: white;
     background-repeat: no-repeat;
@@ -333,7 +315,6 @@ a {
     background-clip: text;
   }
   100%{
-    font-size: 6em;
     color: white;
     background-color: white;
     background-clip: text;

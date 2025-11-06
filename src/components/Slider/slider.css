@@ -10,9 +10,9 @@
 }
 
 .slide-track {
-		animation: scroll 45s linear infinite;
+		animation: scroll 60s linear infinite;
 		display: flex;
-		width: calc(100px * 30);
+		width: calc(100px * 28);
 	}
 	
 .slide img {
@@ -31,5 +31,5 @@
 
 @keyframes scroll {
 	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-100px * 15))}
+	100% { transform: translateX(calc(-100px * 14))}
 }

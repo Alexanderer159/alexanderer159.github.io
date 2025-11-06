@@ -4,7 +4,7 @@ export const Services = () => (
 <>
     <div className="services-top-container d-flex flex-column animated">
 
-        <p className="protitle text-center">What can i do for <strong className="emphasis">you?</strong></p>
+        <p className="protitle text-center">What can I do for <strong className="emphasis">you?</strong></p>
 
         <div className="service-card-group d-flex p-5 gap-5">
         
@@ -24,7 +24,7 @@ export const Services = () => (
                     
                 </div>
 
-                <p className="inside-service-card m-0 p-2 text-center">Design <strong className="emphasis"> unique </strong> webpages</p>
+                <p className="inside-service-card m-0 p-2 text-center"><strong className="emphasis"> Design </strong> unique webpages</p>
             </div>
 
             <div className="service-card d-flex flex-column justify-content-center align-items-center">
@@ -36,23 +36,18 @@ export const Services = () => (
 
                 </div>
 
-                <p className="inside-service-card m-0 p-2 text-center cdci-work"><strong className="emphasis">CD/CI</strong> focused work</p>
+                <p className="inside-service-card m-0 p-2 text-center cdci-work">Program <strong className="emphasis">maintainable</strong> mechanisms</p>
             </div>
 
             <div className="service-card d-flex flex-column justify-content-end align-items-center project-card">
 
                 <div className="service-card-pic">
-                    <svg viewBox="0 0 122.88 70.39">
-                    <path fill="#fff" fillRule="nonzero" d="M16.3,0H106a2.15,2.15,0,0,1,2.14,2.14V39.52l-3.36-2.27V8.91h-87V61.35h87V55.77l3.36,1.51v5.19a2.19,2.19,0,0,1-.39,1.23h11.76a3.35,3.35,0,0,1,0,6.69H3.35a3.35,3.35,0,1,1,0-6.69h11.2a2.12,2.12,0,0,1-.39-1.23V2.14A2.14,2.14,0,0,1,16.3,0ZM28.74,3.45a1.29,1.29,0,1,1-1.29,1.29,1.29,1.29,0,0,1,1.29-1.29Zm-4.51,0a1.29,1.29,0,1,1-1.29,1.29,1.29,1.29,0,0,1,1.29-1.29Zm-4.51,0a1.29,1.29,0,1,1-1.29,1.29,1.29,1.29,0,0,1,1.29-1.29Zm38.2,62h7a1.2,1.2,0,0,1,1.2,1.2h0a1.2,1.2,0,0,1-1.2,1.2h-7a1.2,1.2,0,0,1-1.2-1.2h0a1.2,1.2,0,0,1,1.2-1.2Z"/>
-                    <path fill="rgb(0, 255, 191)" fillRule="nonzero" d="M37.25,45.05c-.92,0-.92-3.42,0-3.42H74.17a10.55,10.55,0,0,0,5.17,1.82,11,11,0,0,0,4.14-.37l1.89,2Zm-11.89,0c-.91,0-.91-3.42,0-3.42H34c.91,0,.91,3.42,0,3.42Zm-.29-7.15c-.92,0-.92-3.42,0-3.42H33.7c.91,0,.91,3.42,0,3.42Zm12.18,0c-.92,0-.92-3.42,0-3.42H69.3l.1.22c.51,1.1,1,2.18,1.59,3.2Z"/>
-                    <path fill="rgb(0, 255, 136)" fillRule="nonzero" d="M78.16,13h17A2.77,2.77,0,0,1,98,15.73V26.58a2.77,2.77,0,0,1-2.76,2.76H89.51a11.07,11.07,0,0,0-1.75-2.49A15.21,15.21,0,0,0,80,22.55a21.7,21.7,0,0,0-4.62-.5V15.73A2.77,2.77,0,0,1,78.16,13Z"/>
-                    <path fill="rgb(0, 255, 191)" fillRule="nonzero" d="M52.68,13h17a2.77,2.77,0,0,1,2.75,2.76v6.45c-1.39.14-2.67.34-3.74.54A4.53,4.53,0,0,0,65.1,28a4.4,4.4,0,0,0,.48,1.36H52.68a2.76,2.76,0,0,1-2.75-2.76V15.73A2.76,2.76,0,0,1,52.68,13Z"/>
-                    <path fill="rgb(13, 202, 240)" fillRule="nonzero" d="M27.2,13h17A2.77,2.77,0,0,1,47,15.73V26.58a2.78,2.78,0,0,1-2.76,2.76h-17a2.76,2.76,0,0,1-2.75-2.76V15.73A2.76,2.76,0,0,1,27.2,13Z"/>
-                    <path fill="#fff" fillRule="nonzero" d="M69.55,27.17c4.64,3.09,4,11.12,10.26,11.78a6.49,6.49,0,0,0,4.93-1.61,4.15,4.15,0,0,0,1.34-2.7c.4-4.15-3.4-6.86-7-7.68a24.48,24.48,0,0,0-9.48.21Zm19,8.21a6.25,6.25,0,0,1-2.33,4l4.78,5a18.69,18.69,0,0,0,4.64-8.07,31.63,31.63,0,0,1-7.09-.95Zm8.29,1.93a21,21,0,0,1-4.48,7.93l22.17,9.95a6.26,6.26,0,0,0,1.46.54,2.36,2.36,0,0,0,2.74-2.92,2.77,2.77,0,0,0-1.21-1.45l-20.68-14Z"/>
-                    </svg>
+                    <svg viewBox="0 0 108.39 122.88">
+                        <path fill="#fff" fillRule="evenodd" d="M8.05,0h92.28a8.07,8.07,0,0,1,8.06,8.06V85.74a8.08,8.08,0,0,1-8.06,8.05H62.57v-.16c0-1.35,0-2.67-.06-4.88h38.86a2.22,2.22,0,0,0,2.22-2.23V19.46H5.12V86.52a2.1,2.1,0,0,0,.07.56A7.34,7.34,0,0,0,5,88.67a9.65,9.65,0,0,0,.86,4.17,5.15,5.15,0,0,0,.36.7l0,0A8.09,8.09,0,0,1,0,85.74V8.06A8.07,8.07,0,0,1,8.05,0ZM26.88,69.07a3.36,3.36,0,0,1,3.59,3.34V93.83h2.17V83.32c0-4.25,6.7-4.12,6.7.24v10.5l.1,0h2.35V85.68c0-4.25,6.7-4.12,6.7.23v7.76h2.36V87.76c0-4.25,6.7-4.12,6.7.23,0,4.9.28,10.68.1,15.57-.19,5.37-1.3,11.42-5.19,14.8a18.18,18.18,0,0,1-15,4.27c-9.22-1.46-11.55-7.11-15.94-14.07L10.37,90.9c-.69-1.61-.6-2.7.09-3.4,3-1.92,7.78,2.16,13.12,7.93l.19,0V72.18a3.12,3.12,0,0,1,3.11-3.11ZM17.28,40.3a3.53,3.53,0,0,1,5.86-3.92l1.91,2.1,5.61-7a3.52,3.52,0,0,1,5.44,4.48L27.62,46.15a3.77,3.77,0,0,1-.84.8,3.53,3.53,0,0,1-4.9-1l-4.6-5.68ZM88.13,68.57a3.7,3.7,0,0,0,0-7.39H49.51a3.7,3.7,0,1,0,0,7.39Zm0-26a3.7,3.7,0,0,0,0-7.39H49.51a3.7,3.7,0,1,0,0,7.39ZM17.64,54.63H36a2.51,2.51,0,0,1,2.51,2.51V72.61A2.52,2.52,0,0,1,36,75.12h-.53V72.41a8,8,0,0,0-2-5.37V59.65H20.15v8.1a8,8,0,0,0-1.34,4.43v2.94H17.64a2.52,2.52,0,0,1-2.51-2.51V57.14a2.51,2.51,0,0,1,2.51-2.51ZM92.66,7a4,4,0,1,1-4,4,4,4,0,0,1,4-4ZM65.71,7a4,4,0,1,1-4,4,4,4,0,0,1,4-4ZM79.19,7a4,4,0,1,1-4,4,4,4,0,0,1,4-4Z"/>
+                        </svg>
                 </div>
 
-                <p className="inside-service-card m-0 p-2 text-center">Tackle <strong className="emphasis">Big</strong> front-end projects</p>
+                <p className="inside-service-card m-0 p-2 text-center"> Automated code <strong className="emphasis">testing</strong></p>
 
             </div>    
             

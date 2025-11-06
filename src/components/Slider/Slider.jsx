@@ -5,7 +5,6 @@ import JSIcon from '/Skills/Javascript.png'
 import pythonIcon from '/Skills/Python.png'
 import reactIcon from '/Skills/React.png'
 import bootstrapIcon from '/Skills/Bootstrap.png'
-import tailwindIcon from '/Skills/Tailwind.png'
 import nodeIcon from '/Skills/Node.png'
 import gitHubIcon from '/Skills/Github.png'
 import gitIcon from '/Skills/Git.png'
@@ -20,7 +19,7 @@ export const Slider = () => {
   	return (
 <>
 <div className="pt-5">
-<p className="slide-text text-center">ToolSet</p>
+<p className="slide-text text-center">SkillSet</p>
 
   <div className="slider overflow-hidden">
 	<div className="slide-track d-flex">
@@ -47,10 +46,6 @@ export const Slider = () => {
 
         <div className="slide">
             <a href="https://getbootstrap.com/" target="_blank"><img src={bootstrapIcon}/></a>
-		</div>
-
-        <div className="slide">
-            <a href="https://tailwindcss.com/" target="_blank"><img src={tailwindIcon}/></a>
 		</div>
 
         <div className="slide">
@@ -107,10 +102,6 @@ export const Slider = () => {
 
         <div className="slide">
             <a href="https://getbootstrap.com/" target="_blank"><img src={bootstrapIcon}/></a>
-		</div>
-
-        <div className="slide">
-            <a href="https://tailwindcss.com/" target="_blank"><img src={tailwindIcon}/></a>
 		</div>
 
         <div className="slide">

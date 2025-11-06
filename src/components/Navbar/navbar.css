@@ -13,6 +13,5 @@
   &:hover {
     transition: 1s ease;
     color: transparent;
-    font-size: x-large;
   }
 }
