@@ -1,5 +1,5 @@
 import "./card.css"
-import alejandroPic from '../../assets/Alejandro/CV-Photo.jpg'
+import alejandroPic from '../../assets/Alejandro/CV-Photo.png'
 
 export const Card = () => (
 
@@ -33,7 +33,7 @@ export const Card = () => (
 
           </div>
 
-          <p className="loc-text m-0">Alicante province, Spain</p>
+          <p className="loc-text m-0">Valencian Community, Spain</p>
         </div>
 
         <p className="card-back-text text-center">Soft Skills</p>

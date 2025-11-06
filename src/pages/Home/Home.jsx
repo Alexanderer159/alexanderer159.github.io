@@ -62,7 +62,7 @@ const handleScroll = (e) => {
               <p className="name m-0">Alejandro De Yavorsky</p>
 
               <div className="devtext-container">
-                <p className="devtext m-0">Full-Stack developer + Love for UI & UX = <strong className="emphasis">Amazing web-pages.</strong></p>
+                <p className="devtext m-0">Web developer + Love for UI & UX = <strong className="emphasis">Amazing web-pages.</strong></p>
               </div>
               
 
