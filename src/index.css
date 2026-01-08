@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* colors MUST be HSL.*/
+
+*{
+  overflow-clip-margin: unset;
+}
 
 @layer base {
   :root {
@@ -116,7 +118,7 @@ All colors MUST be HSL.
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif tracking-tight;
+    @apply font-serif;
   }
 }
 
@@ -131,11 +133,11 @@ All colors MUST be HSL.
   }
 
   .pill-nav {
-    @apply rounded-full bg-[hsl(var(--surface-elevated))] backdrop-blur-lg border border-border/50;
+    @apply bg-[hsl(var(--surface-elevated))] backdrop-blur-lg border border-border/50;
   }
 
   .floating-button {
-    @apply w-12 h-12 rounded-full bg-[hsl(var(--cream)/0.9)] backdrop-blur-sm flex items-center justify-center text-[hsl(var(--cream-foreground))] hover:bg-[hsl(var(--cream))] hover:scale-110 transition-all duration-300;
+    @apply w-12 h-12 bg-[hsl(var(--cream)/0.9)] backdrop-blur-sm flex items-center justify-center text-[hsl(var(--cream-foreground))] hover:bg-[hsl(var(--cream))] hover:scale-110 transition-all duration-300;
     box-shadow: 0 4px 12px -2px hsl(var(--shadow-soft) / 0.15);
   }
 

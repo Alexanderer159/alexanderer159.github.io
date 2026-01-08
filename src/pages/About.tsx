@@ -1,11 +1,9 @@
-import Header from "@/components/Header";
 import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-background animate-fade-in">
-      <Header />
       
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}

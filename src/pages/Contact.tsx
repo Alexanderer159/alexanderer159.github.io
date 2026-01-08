@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
@@ -27,7 +26,6 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-background animate-fade-in">
-      <Header />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}

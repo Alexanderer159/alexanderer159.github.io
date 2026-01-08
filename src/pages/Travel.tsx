@@ -1,4 +1,3 @@
-import Header from "@/components/Header";
 import ArticleCard from "@/components/ArticleCard";
 import { articles } from "@/data/articles";
 
@@ -9,7 +8,6 @@ const Travel = () => {
 
   return (
     <div className="min-h-screen bg-background animate-fade-in">
-      <Header />
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}

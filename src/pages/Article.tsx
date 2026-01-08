@@ -1,5 +1,4 @@
 import { useParams, Navigate } from "react-router-dom";
-import Header from "@/components/Header";
 import ArticleCard from "@/components/ArticleCard";
 import { getArticleById, getRelatedArticles } from "@/data/articles";
 import { Facebook, Twitter, Linkedin, Link2, ArrowLeft } from "lucide-react";
@@ -35,7 +34,6 @@ const Article = () => {
 
   return (
     <div className="min-h-screen bg-background animate-fade-in">
-      <Header />
       
       <main>
         {/* Back Navigation */}
