@@ -1,7 +1,7 @@
 import { Mail, Instagram, Twitter } from "lucide-react";
 
-const Authors = () => {
-  const authors = [
+const Reviews = () => {
+  const review = [
     {
       name: "Emma Thompson",
       role: "Wellness Editor",
@@ -39,7 +39,7 @@ const Authors = () => {
         {/* Hero Section */}
         <div className="mb-16 text-center space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">
-            Meet Our Authors
+            Meet Our review
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-up stagger-1">
             The voices behind Perspective—experienced writers, practitioners, and thoughtful explorers 
@@ -47,24 +47,24 @@ const Authors = () => {
           </p>
         </div>
 
-        {/* Authors Grid */}
+        {/* review Grid */}
         <section className="grid md:grid-cols-2 gap-8 mb-16">
-          {authors.map((author, index) => (
-            <div key={author.name} className={`rounded-2xl bg-card p-8 hover:shadow-xl transition-all duration-300 animate-slide-up stagger-${Math.min(index + 2, 6)}`}>
+          {review.map((review, index) => (
+            <div key={review.name} className={`rounded-2xl bg-card p-8 hover:shadow-xl transition-all duration-300 animate-slide-up stagger-${Math.min(index + 2, 6)}`}>
               <div className="flex items-start gap-6 mb-6">
                 <img
-                  src={author.image}
-                  alt={author.name}
+                  src={review.image}
+                  alt={review.name}
                   className="w-24 h-24 rounded-full object-cover"
                 />
                 <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-1">{author.name}</h3>
-                  <p className="text-accent font-medium mb-3">{author.role}</p>
-                  <p className="text-sm text-muted-foreground">{author.articles} articles published</p>
+                  <h3 className="text-2xl font-bold mb-1">{review.name}</h3>
+                  <p className="text-accent font-medium mb-3">{review.role}</p>
+                  <p className="text-sm text-muted-foreground">{review.articles} articles published</p>
                 </div>
               </div>
               <p className="text-muted-foreground mb-6 leading-relaxed">
-                {author.bio}
+                {review.bio}
               </p>
               <div className="flex items-center gap-3">
                 <a
@@ -112,4 +112,4 @@ const Authors = () => {
   );
 };
 
-export default Authors;
+export default Reviews;

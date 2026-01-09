@@ -10,18 +10,13 @@ const Wellness = () => {
     <div className="min-h-screen bg-background animate-fade-in">
       
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Hero Section */}
+{/* Hero Section */}
         <div className="mb-16 text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">
-            Wellness & Self-Care
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-up stagger-1">
-            Discover practices, insights, and strategies to nurture your physical, mental, and emotional wellbeing. 
-            From mindful routines to holistic health approaches, explore ways to create balance and vitality in your daily life.
-          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">Projects</h1>
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-up stagger-1">Check out my most recent projects</p>
         </div>
 
-        {/* Articles Grid */}
+{/* Articles Grid */}
         <section>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {wellnessArticles.map((article, index) => (
@@ -32,7 +27,7 @@ const Wellness = () => {
           </div>
         </section>
 
-        {/* Featured Content */}
+{/* Featured Content */}
         <section className="mt-16 rounded-2xl bg-card p-8 md:p-12">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-6">Why Wellness Matters</h2>

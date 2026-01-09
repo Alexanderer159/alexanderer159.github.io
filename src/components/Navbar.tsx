@@ -34,9 +34,8 @@ return (
 
         <nav className="hidden sm:flex items-center gap-2">
           <button onClick={() => {navigate("/")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">Home</button>
-          <button onClick={() => {navigate("/#articles")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">Projects</button>
-          <button onClick={() => {navigate("/wellness")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">Wellness</button>
-          <button onClick={() => {navigate("/travel")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">Travel</button>
+          <button onClick={() => {navigate("/projects")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">Projects</button>
+          <button onClick={() => {navigate("/reviews")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">Reviews</button>
           <button onClick={() => {navigate("/about")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">About me</button>
         </nav>
 
