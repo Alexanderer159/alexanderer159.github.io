@@ -132,10 +132,6 @@
     box-shadow: 0 20px 40px -10px hsl(var(--shadow-soft) / 0.15);
   }
 
-  .pill-nav {
-    @apply bg-[hsl(var(--surface-elevated))] backdrop-blur-lg border border-border/50;
-  }
-
   .floating-button {
     @apply w-12 h-12 bg-[hsl(var(--cream)/0.9)] backdrop-blur-sm flex items-center justify-center text-[hsl(var(--cream-foreground))] hover:bg-[hsl(var(--cream))] hover:scale-110 transition-all duration-300;
     box-shadow: 0 4px 12px -2px hsl(var(--shadow-soft) / 0.15);
@@ -185,19 +181,19 @@
   }
 
   .animate-fade-in {
-    animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 1s ease-out;
   }
 
   .animate-slide-up {
-    animation: slideUp 0.6s ease-out;
+    animation: slideUp 1.2s ease-out;
   }
 
   .animate-slide-down {
-    animation: slideDown 0.6s ease-out;
+    animation: slideDown 1.5s ease-out;
   }
 
   .animate-scale-in {
-    animation: scaleIn 0.5s ease-out;
+    animation: scaleIn 1s ease-out;
   }
 
   /* Stagger animations */
@@ -265,3 +261,32 @@
     @apply bg-[hsl(var(--tag-growth))] text-primary;
   }
 }
+
+.tools-infinite-track {
+width: fit-content;
+animation: tools-infinite-scroll 45s linear infinite;
+}
+
+.tools-infinite-track:hover {
+  animation-play-state: paused;
+}
+
+.filter-original-to-bw:hover {
+filter: grayscale(1);
+}
+
+.filter-bw-to-original {
+filter: grayscale(1);
+}
+
+.filter-bw-to-original:hover {
+filter: none;
+}
+
+@keyframes tools-infinite-scroll {
+from {
+    transform: translateX(0);
+}
+to {
+    transform: translateX(-50%);
+}}
