@@ -7,6 +7,7 @@ import MongoIcon from "/assets/tools/MongoIcon.png"
 import TailwindIcon from "/assets/tools/TailwindIcon.png"
 import BSIcon from "/assets/tools/BSIcon.png"
 import CyIcon from "/assets/tools/CypressIcon.png"
+import K6Icon from "/assets/tools/K6Icon.png"
 
 const IntroSection = () => {
 
@@ -19,7 +20,8 @@ const tools = [
 { name: "MongoDB", icon: MongoIcon },
 { name: "Tailwind", icon: TailwindIcon },
 { name: "Bootstrap", icon: BSIcon },
-{ name: "Cypress", icon: CyIcon }
+{ name: "Cypress", icon: CyIcon },
+{ name: "K6", icon: K6Icon }
 ];
 
   return (

@@ -2,113 +2,90 @@ import { Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const About = () => {
-  return (
+
+return (
+<>
     <div className="min-h-screen bg-background animate-fade-in">
       
-      <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* Hero Section */}
-        <div className="mb-16 text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">
-            About Perspective
-          </h1>
-          <p className="text-lg text-muted-foreground leading-relaxed animate-slide-up stagger-1">
-            A space for exploring ideas, finding inspiration, and discovering new ways of seeing the world.
-          </p>
+      <main className="max-w-5xl mx-auto px-8 py-12 space-y-16">
+{/* Hero Section */}
+        <div className="text-center space-y-6">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold animate-slide-down">"Who am I?"</h1>
+          <p className="text-lg text-muted-foreground animate-slide-up stagger-1">A question many make, but few answer.</p>
         </div>
 
-        {/* Story Section */}
-        <section className="mb-16 space-y-6 text-muted-foreground animate-slide-up stagger-2">
-          <h2 className="text-3xl font-bold text-foreground mb-6">Our Story</h2>
-          <p>
-            Perspective began with a simple question: What if we could create a space where thoughtful ideas, 
-            meaningful stories, and practical wisdom come together to enrich our daily lives?
-          </p>
-          <p>
-            In a world saturated with information, we felt the need for something different—a publication that 
-            prioritizes depth over speed, quality over quantity, and authentic connection over viral content. 
-            Perspective is our answer to that need.
-          </p>
-          <p>
-            We explore topics that matter: wellness practices that actually work, travel experiences that transform 
-            us, creative pursuits that bring joy, and personal growth strategies that lead to lasting change. 
-            Our approach is grounded in curiosity, backed by research, and enriched by lived experience.
-          </p>
+{/* Story Section */}
+        <section className="space-y-6 text-muted-foreground animate-slide-up stagger-3">
+          <h2 className="text-3xl font-bold text-foreground mb-6">My Story</h2>
+
+          <p>I began my journey with a simple question: What if I could create, instead of just consuming?</p>
+
+          <p>In a world saturated with AI, I felt the need for something different—something that prioritized depth over speed, quality over 
+            quantity, and authentic connection over viral content.</p>
+
+          <p>I took hands into the matter and learnt how to make that happen. One frustrating day after the other...</p>
+
         </section>
 
-        {/* Mission Section */}
-        <section className="mb-16 rounded-2xl bg-card p-8 md:p-12">
-          <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+{/* Mission Section */}
+        <section className="rounded-md bg-card p-12 hover:-translate-y-1 transition-all duration-500">
+          <h2 className="text-3xl font-bold mb-6">My goals</h2>
+
           <div className="space-y-4 text-muted-foreground">
-            <p>
-              We believe that how we see the world shapes how we experience it. Perspective is dedicated to 
-              offering fresh viewpoints, practical insights, and inspiring stories that help readers:
-            </p>
+
+            <p>Make amazing webpages, that strike visually and are fully functional:</p>
+
             <ul className="space-y-3 ml-6">
-              <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                <span>Cultivate mindful, balanced lifestyles that prioritize wellbeing</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                <span>Explore the world with curiosity and respect</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                <span>Express themselves authentically through creative pursuits</span>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3 mt-1">•</span>
-                <span>Embrace personal growth as a lifelong journey</span>
-              </li>
+
+              <li className="flex items-start"><span className="mr-2">•</span><span>Good coding practices</span></li>
+              <li className="flex items-start"><span className="mr-2">•</span><span>Great communication</span></li>
+              <li className="flex items-start"><span className="mr-2">•</span><span>Constant learning</span></li>
+              <li className="flex items-start"><span className="mr-2">•</span><span>Embrace personal growth as a lifelong journey</span></li>
+
             </ul>
+
           </div>
         </section>
 
-        {/* Values Section */}
-        <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Our Values</h2>
+{/* Values Section */}
+        <section className="">
+          <h2 className="text-3xl font-bold mb-8">My Values</h2>
+
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-xl bg-muted">
+
+            <div className="p-6 rounded-md bg-muted hover:-translate-y-0.5 transition-all duration-500">
               <h3 className="text-xl font-semibold mb-3">Authenticity</h3>
-              <p className="text-muted-foreground">
-                We share real experiences, honest reflections, and genuine insights—not curated perfection.
-              </p>
+              <p className="text-muted-foreground">I believe honesty and transparency are the cornerstone of every company.</p>
             </div>
-            <div className="p-6 rounded-xl bg-muted">
+
+            <div className="p-6 rounded-md bg-muted hover:-translate-y-0.5 transition-all duration-500">
               <h3 className="text-xl font-semibold mb-3">Thoughtfulness</h3>
-              <p className="text-muted-foreground">
-                Every article is carefully researched, thoughtfully written, and designed to add real value.
-              </p>
+              <p className="text-muted-foreground">Every line of code is thoughtfully written, and designed to add real value and functionality.</p>
             </div>
-            <div className="p-6 rounded-xl bg-muted">
-              <h3 className="text-xl font-semibold mb-3">Inclusivity</h3>
-              <p className="text-muted-foreground">
-                We welcome diverse perspectives and believe everyone's journey deserves respect and representation.
-              </p>
+
+            <div className="p-6 rounded-md bg-muted hover:-translate-y-0.5 transition-all duration-500">
+              <h3 className="text-xl font-semibold mb-3">Attention to detail</h3>
+              <p className="text-muted-foreground">Every project deserves full dedication and hand-made components for that specific project.</p>
             </div>
-            <div className="p-6 rounded-xl bg-muted">
+
+            <div className="p-6 rounded-md bg-muted hover:-translate-y-0.5 transition-all duration-500">
               <h3 className="text-xl font-semibold mb-3">Sustainability</h3>
-              <p className="text-muted-foreground">
-                We promote practices that are sustainable for individuals, communities, and the planet.
-              </p>
+              <p className="text-muted-foreground">Understandable code and reusable components.</p>
             </div>
+
           </div>
         </section>
 
-        {/* CTA Section */}
+{/* CTA Section */}
         <section className="text-center py-12 rounded-2xl bg-card">
-          <h2 className="text-3xl font-bold mb-4">Join Our Community</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Subscribe to receive our latest articles, insights, and inspiration directly in your inbox.
-          </p>
-          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8">
-            <Mail className="mr-2 h-4 w-4" />
-            Subscribe Now
-          </Button>
+          <h2 className="text-3xl font-bold mb-4">Send me a mail.</h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">I'll contact you back.</p>
+          <Button className="bg-primary hover:scale-105 transition-all duration-700 text-primary-foreground rounded-md">
+            <a href="mailto:traledeyavorsky@gmail.com" target="_blank" className="flex px-8 py-3"><Mail className="mr-2 h-4 w-4" />Send Email</a></Button>
         </section>
       </main>
     </div>
-  );
-};
+</>
+);};
 
 export default About;

@@ -17,7 +17,7 @@ const navigate = useNavigate()
         <div className="flex flex-col justify-center space-y-6">
           <div className="space-y-4 sm:space-y-10">
             <h1 className="text-4xl sm:text-7xl font-bold animate-slide-down sm:text-end text-center">Alejandro <br/> De Yavorsky.</h1>
-            <p className="text-lg text-center max-w-xl animate-slide-up stagger-1 border border-2 border-white p-2">Web developer + Passion for UI / UX = Amazing Websites.</p>
+            <p className="text-lg text-center max-w-xl animate-slide-up stagger-1 rounded-sm border border-2 border-white p-2">Web developer + Passion for UI / UX = Amazing Websites.</p>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6 pt-4 animate-slide-up stagger-2">
