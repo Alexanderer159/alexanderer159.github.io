@@ -30,22 +30,22 @@ const ProjectCard = ({ id, title, category, date, image }: ProjectCardProps) => 
         <img src={image} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-125"/>
         
 {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/60 to-transparent group-hover:from-black/0 group-hover:via-black/0 transition-all duration-700" />
+        <div className="absolute -inset-1 bg-gradient-to-t from-black/80 via-black/60 to-transparent group-hover:from-black/0 group-hover:via-black/0 transition-all duration-700" />
         
 {/* Content overlay */}
-        <div className="absolute inset-0 p-8 flex flex-col justify-between">
+        <div className="absolute inset-1 group-hover:-inset-5 transition-all duration-700 p-8 flex flex-col justify-between">
 
 {/* Top section - Category and Date */}
-          <div className="flex justify-between">
-            <span className={`px-4 py-2 rounded-md text-xs font-medium backdrop-blur-md ${getCategoryClass(category)}`}>{category}</span>
-            <span className="px-4 py-2 rounded-md backdrop-blur-sm text-xs font-medium text-white border border-white/10">{date}</span>
+          <div className="flex justify-between items-center">
+            <span className={`px-4 py-2 rounded-md text-md font-medium ${getCategoryClass(category)}`}>{category}</span>
+            <span className="px-4 py-2 rounded-md text-md backdrop-blur-lg bg-black/10 font-medium text-white">{date}</span>
           </div>
 
 {/* Bottom section - Title and Arrow */}
           
           <div className="">
-            <span className="text-white/50 text-xs font-medium block mb-3">{id}</span>
-            <h3 className="text-white text-xl sm:text-3xl font-bold">{title}</h3>
+            <span className="text-white/50 text-xs font-medium block mb-3 group-hover:text-neutral-500">{id}</span>
+            <h3 className="text-white text-xl sm:text-3xl font-bold group-hover:text-neutral-500">{title}</h3>
           </div>
         </div>
 

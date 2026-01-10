@@ -21,13 +21,12 @@ const Project = () => {
 
   const getCategoryClass = (cat: string) => {
     const normalized = cat.toLowerCase();
-    if (normalized.includes("financ")) return "tag-financing";
-    if (normalized.includes("lifestyle")) return "tag-lifestyle";
-    if (normalized.includes("community")) return "tag-community";
-    if (normalized.includes("wellness")) return "tag-wellness";
-    if (normalized.includes("travel")) return "tag-travel";
-    if (normalized.includes("creativ")) return "tag-creativity";
-    if (normalized.includes("growth")) return "tag-growth";
+    if (normalized.includes("history")) return "tag-language";
+    if (normalized.includes("language")) return "tag-community";
+    if (normalized.includes("tech")) return "tag-wellness";
+    if (normalized.includes("shop")) return "tag-travel";
+    if (normalized.includes("social")) return "tag-creativity";
+    if (normalized.includes("")) return "tag-growth";
     return "tag-lifestyle";
   };
 
@@ -35,24 +34,19 @@ const Project = () => {
     <div className="min-h-screen bg-background animate-fade-in">
       
       <main>
-        {/* Back Navigation */}
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <button onClick={() => {navigate("/projects")}} className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-accent transition-colors">
-            <ArrowLeft className="w-4 h-4" />Back to projects
-          </button>
-        </div>
+
 
         {/* Hero Image */}
-        <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] mb-12">
+        <div className="relative w-full mb-12">
           <img src={project.image} className="w-full h-full object-cover"/>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 -mt-32 relative z-10">
+        <div className="max-w-5xl mx-auto px-8 -mt-40 relative">
           {/* Project Header */}
           <div className="mb-12 animate-slide-up">
             <div className="flex items-center gap-3 mb-6">
-              <span className={`p-3 rounded-full text-sm font-medium ${getCategoryClass(project.category)}`}>{project.category}</span>
+              <span className={`py-2 px-3 rounded-full text-sm font-medium ${getCategoryClass(project.category)}`}>{project.category}</span>
               <span className="text-sm text-muted-foreground">{project.date}</span>
               <span className="text-sm text-muted-foreground">•</span>
               <span className="text-sm text-muted-foreground">{project.readTime} read</span>

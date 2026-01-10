@@ -26,7 +26,7 @@ export const projects: Project[] = [
   {
     id: "001",
     title: "Exzellent",
-    subtitle: "Be Excellent with Exzellent",
+    subtitle: "Be Excellent with Exzellent.",
     category: "Language",
     date: "December, 2025",
     readTime: "5 min",
@@ -63,11 +63,11 @@ export const projects: Project[] = [
   {
     id: "002",
     title: "LATAM Connect",
-    subtitle: "Connecting LATAM and Europe",
+    subtitle: "Connecting LATAM and Europe.",
     category: "Tech",
     date: "November, 2025",
     readTime: "5 min",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=1920&q=80",
+    image: "/projects/LC-portfolio.jpeg",
     author: {
       name: "Alejandro De Yavorsky",
       avatar: "/assets/CV-Photo.png",
@@ -100,7 +100,7 @@ export const projects: Project[] = [
   {
     id: "003",
     title: "Soundstagram!",
-    subtitle: "What are we doing today?",
+    subtitle: "Let´s make some waves.",
     category: "Social",
     date: "July, 2025",
     readTime: "5 min",
@@ -137,7 +137,7 @@ export const projects: Project[] = [
    {
     id: "004",
     title: "BoxNcase",
-    subtitle: "Your Gateway To Specialty & Fine Foods",
+    subtitle: "Your Gateway To Specialty & Fine Foods.",
     category: "Shop Front",
     date: "July, 2024",
     readTime: "5 min",
