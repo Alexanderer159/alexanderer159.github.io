@@ -33,7 +33,7 @@ const ProjectCard = ({ id, title, category, date, image }: ProjectCardProps) => 
         <div className="absolute -inset-1 bg-gradient-to-t from-black/80 via-black/60 to-transparent group-hover:from-black/0 group-hover:via-black/0 transition-all duration-700" />
         
 {/* Content overlay */}
-        <div className="absolute inset-1 group-hover:-inset-5 transition-all duration-700 p-8 flex flex-col justify-between">
+        <div className="absolute -inset-5 sm:inset-1 group-hover:-inset-5 transition-all duration-700 p-8 flex flex-col justify-between">
 
 {/* Top section - Category and Date */}
           <div className="flex justify-between items-center">

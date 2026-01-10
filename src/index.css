@@ -173,6 +173,10 @@
     animation: fadeIn 1s ease-out;
   }
 
+   .animate-fade-in-menu {
+    animation: fadeIn 0.2s ease-out;
+  }
+
   .animate-slide-up {
     animation: slideUp 1.2s ease-out;
   }

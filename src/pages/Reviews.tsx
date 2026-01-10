@@ -1,7 +1,14 @@
+import { useState } from "react";
 import { Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Reviews = () => {
+const [contentOpen, setContentOpen] = useState(false)
+
+const setcontentOpen = () => {
+  setContentOpen(prev => !prev);
+};
+
   const review = [
     {
       name: "Hans Aparicio Moreno",
@@ -49,7 +56,7 @@ const Reviews = () => {
                 </div>
               </div>
 
-              <p className="text-muted-foreground mb-6">"{review.content}"</p>
+              <p onClick={() => setcontentOpen()} className={`text-muted-foreground mb-6 text-center sm:text-justify sm:ps-10 ${contentOpen ? "" : "sm:line-clamp-none line-clamp-5"}`}>"{review.content}"</p>
               <div className="flex items-center">
                 <div className="mx-auto">
                   <Button className="bg-primary hover:scale-105 transition-all duration-700 text-primary-foreground rounded-md">

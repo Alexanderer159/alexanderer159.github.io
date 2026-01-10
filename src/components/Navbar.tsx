@@ -25,13 +25,13 @@ const toggleTheme = () => {
 
 return (
 <>
-  <nav className="sticky top-0 z-50 py-4">
-    <div className="max-w-8xl mx-auto px-8">
+  <nav className="sticky top-0 z-50 py-4 max-w-8xl mx-auto px-8">
+    
       <div className="flex items-center justify-between h-16 backdrop-blur-lg bg-background/60 border border-border/50 px-6 rounded-md">
 
 {/* Desktop Navigation */}
 
-        <nav className="hidden sm:flex items-center justify-center w-full gap-3">
+        <nav className="hidden sm:flex items-center justify-end w-full gap-3">
           <button onClick={() => {navigate("/")}} className="text-lg font-medium hover:bg-muted/90 rounded-md p-2 duration-500 transition-all hover:scale-105">Home</button>
           <button onClick={() => {navigate("/projects")}} className="text-lg font-medium hover:bg-muted/90 rounded-md p-2 duration-500 transition-all hover:scale-105">Projects</button>
           <button onClick={() => {navigate("/reviews")}} className="text-lg font-medium hover:bg-muted/90 rounded-md p-2 duration-500 transition-all hover:scale-105">Reviews</button>
@@ -39,7 +39,7 @@ return (
 
 {/* Actions */}
 
-        <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
+        <div className="flex items-center gap-2 sm:gap-4 flex-grow justify-between sm:justify-end w-full">
           <button onClick={toggleTheme} className="p-2 rounded-md hover:bg-muted/90 transition-all duration-500 hover:scale-105">
             {isDark ? (<Sun className="h-5 w-5" />) : (<Moon className="h-5 w-5" />)}
           </button>
@@ -57,16 +57,17 @@ return (
 {/* Mobile Menu */}
 
       {isMenuOpen && (
-        <div className="sm:hidden py-4 border-t border-border animate-fade-in">
-          <nav className="flex flex-col gap-4">
-            <button onClick={() => {navigate("/")}} className="text-sm font-medium hover:text-accent transition-colors">Home</button>
-            <button onClick={() => {navigate("/")}} className="text-sm font-medium hover:text-accent transition-colors">Projects</button>
-            <a href="http://wa.me/+34613502876" target="_blank" className="bg-primary text-primary-foreground rounded-md w-full">Contact Me.</a>
+        <div className="sm:hidden py-4 fixed inset-x-8 animate-fade-in-menu">
+          <nav className="flex flex-col gap-4 backdrop-blur-lg bg-background/60 rounded-md p-5">
+            <button onClick={() => {navigate("/"); setIsMenuOpen(false);}} className="p-3 text-sm font-medium hover:text-accent transition-colors">Home</button>
+            <button onClick={() => {navigate("/projects"); setIsMenuOpen(false);}} className="p-3 text-sm font-medium hover:text-accent transition-colors">Projects</button>
+            <button onClick={() => {navigate("/reviews"); setIsMenuOpen(false);}} className="p-3 text-sm font-medium hover:text-accent transition-colors">Reviews</button>
+            <a href="http://wa.me/+34613502876" target="_blank" className="p-3 bg-primary text-primary-foreground rounded-sm text-center font-semibold">Contact Me.</a>
           </nav>
         </div>
       )}
 
-    </div>
+
   </nav>
 </>
 );};

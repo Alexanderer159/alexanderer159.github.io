@@ -35,14 +35,14 @@ const Project = () => {
       
       <main>
 
-
         {/* Hero Image */}
+        <button onClick={() => navigate("/projects")} className="ps-16 text-sm hover:text-neutral-500 transition-all duration-700 mb-5">← Go Back.</button>
         <div className="relative w-full mb-12">
           <img src={project.image} className="w-full h-full object-cover"/>
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent sm:to-background" />
         </div>
 
-        <div className="max-w-5xl mx-auto px-8 -mt-40 relative">
+        <div className="max-w-5xl mx-auto px-8 sm:-mt-60 -mt-16 relative">
           {/* Project Header */}
           <div className="mb-12 animate-slide-up">
             <div className="flex items-center gap-3 mb-6">
@@ -66,7 +66,7 @@ const Project = () => {
                 <img src={project.author.avatar} className="w-14 h-14 rounded-full object-cover"/>
                 <div>
                   <p className="font-semibold">{project.author.name}</p>
-                  <p className="text-sm text-muted-foreground">{project.author.bio}</p>
+                  <p className="text-sm text-muted-foreground">Role: {project.author.bio}</p>
                 </div>
               </div>
 
@@ -94,17 +94,17 @@ const Project = () => {
 
 {/* Project Content */}
           <div className="prose prose-lg max-w-none mb-16 animate-slide-up stagger-2">
-            <p className="text-lg leading-relaxed text-muted-foreground mb-8">{project.content.introduction}</p>
+            <p className="text-lg leading-relaxed text-muted-foreground mb-8 text-justify">{project.content.introduction}</p>
 
             {project.content.sections.map((section, index) => (
               <div key={index} className="mb-10">
                 <h2 className="text-3xl font-bold mb-4">{section.heading}</h2>
-                <p className="text-lg leading-relaxed text-muted-foreground">{section.content}</p>
+                <p className="text-lg leading-relaxed text-muted-foreground text-justify">{section.content}</p>
               </div>
             ))}
 
             <div className="mt-12 p-6 rounded-2xl bg-muted border-l-4 border-accent">
-              <p className="text-lg leading-relaxed italic text-foreground">{project.content.conclusion}</p>
+              <p className="text-lg leading-relaxed italic text-foreground text-justify">{project.content.conclusion}</p>
             </div>
           </div>
 

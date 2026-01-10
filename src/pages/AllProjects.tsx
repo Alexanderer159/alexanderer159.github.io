@@ -3,7 +3,7 @@ import { projects } from "@/data/Project";
 
 const AllProjects = () => {
 
-const cols = projects.length % 3 === 0 ? 3 : projects.length % 2 === 0 ? 2 : 3
+const gridCols = projects.length % 3 === 0 ? "sm:grid-cols-3" : projects.length % 2 === 0 ? "sm:grid-cols-2" : "sm:grid-cols-3";
 
 return (
 <>
@@ -18,7 +18,7 @@ return (
 
 {/* Projects Grid */}
       <section>
-        <div className={`grid grid-cols-1 sm:grid-cols-${cols} gap-6`}>
+        <div className={`grid grid-cols-1 ${gridCols} gap-6`}>
           {projects.map((project, index) => (
             <div key={project.id} className={`animate-slide-up stagger-${Math.min(index + 2, 6)}`}>
               <ProjectCard {...project} />
