@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Menu, X, Moon, Sun } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
 const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,17 +31,16 @@ return (
 
 {/* Desktop Navigation */}
 
-        <nav className="hidden sm:flex items-center gap-2">
-          <button onClick={() => {navigate("/")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">Home</button>
-          <button onClick={() => {navigate("/projects")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">Projects</button>
-          <button onClick={() => {navigate("/reviews")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">Reviews</button>
-          <button onClick={() => {navigate("/about")}} className="text-sm font-medium hover:bg-muted/90 rounded-md p-3 duration-500 transition-all">About me</button>
+        <nav className="hidden sm:flex items-center justify-center w-full gap-3">
+          <button onClick={() => {navigate("/")}} className="text-lg font-medium hover:bg-muted/90 rounded-md p-2 duration-500 transition-all hover:scale-105">Home</button>
+          <button onClick={() => {navigate("/projects")}} className="text-lg font-medium hover:bg-muted/90 rounded-md p-2 duration-500 transition-all hover:scale-105">Projects</button>
+          <button onClick={() => {navigate("/reviews")}} className="text-lg font-medium hover:bg-muted/90 rounded-md p-2 duration-500 transition-all hover:scale-105">Reviews</button>
         </nav>
 
 {/* Actions */}
 
         <div className="flex items-center gap-2 sm:gap-4 flex-shrink-0">
-          <button onClick={toggleTheme} className="p-2 rounded-md hover:bg-muted/90 transition-all duration-500">
+          <button onClick={toggleTheme} className="p-2 rounded-md hover:bg-muted/90 transition-all duration-500 hover:scale-105">
             {isDark ? (<Sun className="h-5 w-5" />) : (<Moon className="h-5 w-5" />)}
           </button>
           
@@ -63,9 +61,6 @@ return (
           <nav className="flex flex-col gap-4">
             <button onClick={() => {navigate("/")}} className="text-sm font-medium hover:text-accent transition-colors">Home</button>
             <button onClick={() => {navigate("/")}} className="text-sm font-medium hover:text-accent transition-colors">Projects</button>
-            <button onClick={() => {navigate("/")}} className="text-sm font-medium hover:text-accent transition-colors">Wellness</button>
-            <button onClick={() => {navigate("/")}} className="text-sm font-medium hover:text-accent transition-colors">Travel</button>
-            <button onClick={() => {navigate("/")}} className="text-sm font-medium hover:text-accent transition-colors">About Me.</button>
             <a href="http://wa.me/+34613502876" target="_blank" className="bg-primary text-primary-foreground rounded-md w-full">Contact Me.</a>
           </nav>
         </div>

@@ -42,7 +42,7 @@
     --radius: 1rem;
 
     /* Custom design tokens */
-    --tag-financing: 210 50% 75%;
+    --tag-language: 210 50% 75%;
     --tag-lifestyle: 140 20% 70%;
     --tag-community: 25 35% 60%;
     --tag-wellness: 280 30% 75%;
@@ -88,7 +88,7 @@
     --ring: 36 44% 96%;
 
     /* Dark mode tag colors */
-    --tag-financing: 210 40% 45%;
+    --tag-language: 210 40% 45%;
     --tag-lifestyle: 140 20% 40%;
     --tag-community: 25 30% 40%;
     --tag-wellness: 280 25% 45%;
@@ -123,19 +123,6 @@
 }
 
 @layer utilities {
-  .card-hover {
-    @apply transition-all duration-500 hover:scale-[1.02];
-    box-shadow: 0 4px 20px -4px hsl(var(--shadow-soft) / 0.1);
-  }
-
-  .card-hover:hover {
-    box-shadow: 0 20px 40px -10px hsl(var(--shadow-soft) / 0.15);
-  }
-
-  .floating-button {
-    @apply w-12 h-12 bg-[hsl(var(--cream)/0.9)] backdrop-blur-sm flex items-center justify-center text-[hsl(var(--cream-foreground))] hover:bg-[hsl(var(--cream))] hover:scale-110 transition-all duration-300;
-    box-shadow: 0 4px 12px -2px hsl(var(--shadow-soft) / 0.15);
-  }
 
   /* Animation keyframes */
   @keyframes fadeIn {

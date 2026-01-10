@@ -1,36 +1,27 @@
-import { Mail, Instagram, Twitter } from "lucide-react";
+import { Linkedin } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Reviews = () => {
   const review = [
     {
-      name: "Emma Thompson",
-      role: "Wellness Editor",
-      bio: "Emma is a certified wellness coach and nutritionist with over 10 years of experience helping people create sustainable self-care practices. She believes in holistic approaches to health that honor both body and mind.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
-      articles: 24,
+      name: "Hans Aparicio Moreno",
+      role: "Senior Software Developer",
+      project: "BoxNCase",
+      date: "July 17, 2025",
+      content: "Alejandro se desempeno como Front-End Developer durante su estancia de trabajo en mi equipo dentro BoxNCase, demostró una excelente disposición, siempre atento a ayudar y aprender. Mostro gran desempeno en su habilidad de trabajo en equipo y su actitud colaborativa, contribuyendo de manera activa tanto en la resolución de problemas como en la creación de un ambiente de trabajo positivo. Además, Alejandro se caracteriza por su atención al detalle, cuidando que cada entrega cumpliera con altos estándares de calidad y usabilidad. Su capacidad de adaptación y compromiso con el proyecto fueron claves para alcanzar los objetivos establecidos. Sin duda, es un profesional valioso que aportaría muchísimo a cualquier equipo en el que participe.",
+      image: "https://media.licdn.com/dms/image/v2/C4D03AQH2gD6czCFE3A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516513122485?e=1769644800&v=beta&t=ZN7H222kgvH-jh_wFdXshGx8qg1aQlQnYW3mktoCzv8",
+      location: "Linked-In",
     },
     {
-      name: "Marcus Chen",
-      role: "Travel Writer",
-      bio: "Having visited over 60 countries, Marcus specializes in slow travel and cultural immersion. His writing explores how travel can be both transformative and sustainable, emphasizing meaningful connection over tourist checklists.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80",
-      articles: 31,
+      name: "Radharani Dorta",
+      role: "Data Scientist",
+      project: "LATAM Connect",
+      date: "January 10, 2026",
+      content: "Tuve la oportunidad de trabajar con Alejandro durante un periodo de prácticas en el mismo equipo. Desde el primer día destacó por ser puntual, responsable y muy comprometido, siempre dispuesto a colaborar y a aportar al equipo. Como fullstack, supo enfrentar los desafíos técnicos con eficacia y su compañerismo y actitud proactiva hicieron que trabajar con él fuera una experiencia muy positiva. Recomiendo a Alejandro sin dudar; cualquier equipo ganaría mucho con su profesionalismo y actitud.",
+      image: "https://media.licdn.com/dms/image/v2/C4D03AQHF9s7YAAOhvw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1635788157954?e=1769644800&v=beta&t=c78PEqRrVe_Ct0QhyvDWhNNMib-nFmHa3ZsTm9frqL8",
+      location: "Linked-In",
     },
-    {
-      name: "Sofia Rodriguez",
-      role: "Creativity Columnist",
-      bio: "Sofia is a multidisciplinary artist and creative consultant who helps individuals and teams unlock their creative potential. She's passionate about making creativity accessible to everyone, not just 'artists.'",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&q=80",
-      articles: 19,
-    },
-    {
-      name: "David Kim",
-      role: "Personal Growth Writer",
-      bio: "David combines insights from psychology, philosophy, and personal experience to explore what it means to live intentionally. His thoughtful approach to growth emphasizes progress over perfection.",
-      image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=800&q=80",
-      articles: 27,
-    },
-  ];
+    ];
 
   return (
     <div className="min-h-screen bg-background animate-fade-in">
@@ -38,56 +29,34 @@ const Reviews = () => {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hero Section */}
         <div className="mb-16 text-center space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">
-            Meet Our review
-          </h1>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight animate-slide-down">What does other people think about me?</h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed animate-slide-up stagger-1">
-            The voices behind Perspective—experienced writers, practitioners, and thoughtful explorers 
-            who bring diverse perspectives and genuine insights to every article.
+            We constantly tell ourselves it doesnt matter but maybe other people do care...
           </p>
         </div>
 
         {/* review Grid */}
-        <section className="grid md:grid-cols-2 gap-8 mb-16">
+        <section className="grid sm:grid-cols-2 gap-8 mb-16">
           {review.map((review, index) => (
-            <div key={review.name} className={`rounded-2xl bg-card p-8 hover:shadow-xl transition-all duration-300 animate-slide-up stagger-${Math.min(index + 2, 6)}`}>
-              <div className="flex items-start gap-6 mb-6">
-                <img
-                  src={review.image}
-                  alt={review.name}
-                  className="w-24 h-24 rounded-full object-cover"
-                />
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-1">{review.name}</h3>
-                  <p className="text-accent font-medium mb-3">{review.role}</p>
-                  <p className="text-sm text-muted-foreground">{review.articles} articles published</p>
+            <div key={review.name} className={`flex flex-col justify-between rounded-md bg-card p-8 transition-all duration-500 animate-slide-up stagger-${Math.min(index + 2, 6)}`}>
+
+              <div className="flex flex-col sm:flex-row items-start gap-6 mb-6">
+                <img src={review.image} className="w-24 h-24 rounded-full object-cover" />
+                <div className="flex flex-col">
+                  <h3 className="text-3xl font-bold mb-1">{review.name}</h3>
+                  <p className="text-accent font-medium mb-3">{review.role} at {review.project}</p>
+                  <p className="text-sm text-muted-foreground">Review placed on: {review.location} - {review.date}</p>
                 </div>
               </div>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                {review.bio}
-              </p>
-              <div className="flex items-center gap-3">
-                <a
-                  href="#email"
-                  className="w-10 h-10 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center"
-                  aria-label="Email"
-                >
-                  <Mail className="w-4 h-4" />
-                </a>
-                <a
-                  href="#twitter"
-                  className="w-10 h-10 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center"
-                  aria-label="Twitter"
-                >
-                  <Twitter className="w-4 h-4" />
-                </a>
-                <a
-                  href="#instagram"
-                  className="w-10 h-10 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="w-4 h-4" />
-                </a>
+
+              <p className="text-muted-foreground mb-6">"{review.content}"</p>
+              <div className="flex items-center">
+                <div className="mx-auto">
+                  <Button className="bg-primary hover:scale-105 transition-all duration-700 text-primary-foreground rounded-md">
+                    <a href="https://www.linkedin.com/in/alejandro-de-yavorsky/details/recommendations/" target="_blank" className="flex px-8 py-3">
+                    <Linkedin className="mr-2 h-4 w-4" />Check review</a>
+                  </Button>
+                </div>
               </div>
             </div>
           ))}
@@ -95,16 +64,11 @@ const Reviews = () => {
 
         {/* Join Section */}
         <section className="text-center py-12 rounded-2xl bg-muted">
-          <h2 className="text-3xl font-bold mb-4">Want to Contribute?</h2>
-          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            We're always looking for thoughtful voices to join our community. If you have insights 
-            to share on wellness, travel, creativity, or personal growth, we'd love to hear from you.
-          </p>
-          <a
-            href="/contact"
-            className="inline-block px-8 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
-          >
-            Get in Touch
+          <h2 className="text-3xl font-bold mb-4">Want to leave one aswell?</h2>
+          <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">  </p>
+          <a href="mailto:traledeyavorsky@gmail.com" target="_blank" 
+            className="inline-block px-8 py-3 rounded-md bg-primary text-primary-foreground font-medium transition-all duration-500 hover:scale-105">
+            Lets work together.
           </a>
         </section>
       </main>
