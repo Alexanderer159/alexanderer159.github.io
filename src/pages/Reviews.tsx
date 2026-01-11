@@ -10,22 +10,34 @@ const setcontentOpen = () => {
 };
 
   const review = [
-    {
-      name: "Hans Aparicio Moreno",
-      role: "Senior Software Developer",
-      project: "BoxNCase",
-      date: "July 17, 2025",
-      content: "Alejandro se desempeno como Front-End Developer durante su estancia de trabajo en mi equipo dentro BoxNCase, demostró una excelente disposición, siempre atento a ayudar y aprender. Mostro gran desempeno en su habilidad de trabajo en equipo y su actitud colaborativa, contribuyendo de manera activa tanto en la resolución de problemas como en la creación de un ambiente de trabajo positivo. Además, Alejandro se caracteriza por su atención al detalle, cuidando que cada entrega cumpliera con altos estándares de calidad y usabilidad. Su capacidad de adaptación y compromiso con el proyecto fueron claves para alcanzar los objetivos establecidos. Sin duda, es un profesional valioso que aportaría muchísimo a cualquier equipo en el que participe.",
-      image: "https://media.licdn.com/dms/image/v2/C4D03AQH2gD6czCFE3A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516513122485?e=1769644800&v=beta&t=ZN7H222kgvH-jh_wFdXshGx8qg1aQlQnYW3mktoCzv8",
+        {
+      url: "https://www.linkedin.com/in/walid-khrouf/",
+      name: "Walid Khrouf",
+      role: "Lead Back-End Developer",
+      project: "Exzellent",
+      date: "January 11, 2026",
+      content: "I had the pleasure of working with Alejandro where he served as a Frontend Developer. He consistently demonstrated professionalism, strong work ethic, and genuine enthusiasm for what he does. Alejandro is highly dedicated and always strives to improve product quality. He frequently proposes excellent ideas to enhance user experience and is proactive in solving problems. His attention to detail and collaborative mindset make him a valuable asset to any team. I highly recommend Alejandro. He is reliable, creative, and motivated.",
+      image: "https://media.licdn.com/dms/image/v2/D4D03AQGiHRkTNl04fw/profile-displayphoto-crop_800_800/B4DZf1KJTmHAAM-/0/1752164767470?e=1769644800&v=beta&t=mqQULvv7RY_4qYbwWq8638dtlwf65HtYIEABAT66Jk0",
       location: "Linked-In",
     },
     {
+      url: "https://www.linkedin.com/in/radharani-dorta/",
       name: "Radharani Dorta",
       role: "Data Scientist",
       project: "LATAM Connect",
       date: "January 10, 2026",
       content: "Tuve la oportunidad de trabajar con Alejandro durante un periodo de prácticas en el mismo equipo. Desde el primer día destacó por ser puntual, responsable y muy comprometido, siempre dispuesto a colaborar y a aportar al equipo. Como fullstack, supo enfrentar los desafíos técnicos con eficacia y su compañerismo y actitud proactiva hicieron que trabajar con él fuera una experiencia muy positiva. Recomiendo a Alejandro sin dudar; cualquier equipo ganaría mucho con su profesionalismo y actitud.",
       image: "https://media.licdn.com/dms/image/v2/C4D03AQHF9s7YAAOhvw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1635788157954?e=1769644800&v=beta&t=c78PEqRrVe_Ct0QhyvDWhNNMib-nFmHa3ZsTm9frqL8",
+      location: "Linked-In",
+    },
+    {
+      url: "https://www.linkedin.com/in/hansaparicio/",
+      name: "Hans Aparicio Moreno",
+      role: "Senior Software Developer",
+      project: "BoxNCase",
+      date: "July 17, 2025",
+      content: "Alejandro se desempeno como Front-End Developer durante su estancia de trabajo en mi equipo dentro BoxNCase, demostró una excelente disposición, siempre atento a ayudar y aprender. Mostro gran desempeno en su habilidad de trabajo en equipo y su actitud colaborativa, contribuyendo de manera activa tanto en la resolución de problemas como en la creación de un ambiente de trabajo positivo. Además, Alejandro se caracteriza por su atención al detalle, cuidando que cada entrega cumpliera con altos estándares de calidad y usabilidad. Su capacidad de adaptación y compromiso con el proyecto fueron claves para alcanzar los objetivos establecidos. Sin duda, es un profesional valioso que aportaría muchísimo a cualquier equipo en el que participe.",
+      image: "https://media.licdn.com/dms/image/v2/C4D03AQH2gD6czCFE3A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516513122485?e=1769644800&v=beta&t=ZN7H222kgvH-jh_wFdXshGx8qg1aQlQnYW3mktoCzv8",
       location: "Linked-In",
     },
     ];
@@ -47,14 +59,14 @@ const setcontentOpen = () => {
           {review.map((review, index) => (
             <div key={review.name} className={`flex flex-col justify-between rounded-md bg-card p-8 transition-all duration-500 animate-slide-up stagger-${Math.min(index + 2, 6)}`}>
 
-              <div className="flex flex-col sm:flex-row items-start gap-6 mb-6">
+              <a href={review.url} target="_blank" className="flex flex-col sm:flex-row items-start gap-6 mb-6 rounded-md p-3 hover:shadow-lg cursor-pointer transition-all duration-700">
                 <img src={review.image} className="w-24 h-24 rounded-full object-cover" />
                 <div className="flex flex-col">
                   <h3 className="text-3xl font-bold mb-1">{review.name}</h3>
                   <p className="text-accent font-medium mb-3">{review.role} at {review.project}</p>
                   <p className="text-sm text-muted-foreground">Review placed on: {review.location} - {review.date}</p>
                 </div>
-              </div>
+              </a>
 
               <p onClick={() => setcontentOpen()} className={`text-muted-foreground mb-6 text-center sm:text-justify sm:ps-10 ${contentOpen ? "" : "sm:line-clamp-none line-clamp-5"}`}>"{review.content}"</p>
               <div className="flex items-center">

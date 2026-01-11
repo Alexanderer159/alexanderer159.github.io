@@ -158,26 +158,26 @@ export const projects: Project[] = [
       bio: "Front-End Developer",
     },
     content: {
-      introduction: "It's not many times you do something for the first time, and much less without any experience. First time programming.",
+      introduction: "It's not many times you do something for the first time, and much less without any experience. This was my first immersion into the world of programming.",
       sections: [
         {
           heading: "The story.",
-          content: "...",
+          content: "Before this project, I had never done anything in the world of programming, however, due to a lucky find on reddit I managed to land a job at a company in the United States as a contractor. My boss, called Surya, found my job application and gave me a job.",
         },
         {
           heading: "The team.",
-          content: "...",
+          content: "My team was pretty small at this point, since I was a VERY junior dev (If even) I was given very basic tasks such as changing some jsx components or changing stuff in CSS. My team leader Hans Moreno, taught me a LOT about programming and it started my love for it, I didn't think I would enjoy it this much until I tried it.",
         },
         {
-          heading: "What sets this project appart?",
-          content: "...",
+          heading: "What sets this project apart?",
+          content: "There are thousands of marketplaces around the web, however this one was set apart due to the products they were providing, they were incredibly niche, super artisanal or from very small businesses that needed to have a delivery and marketfront to sell their products.",
         },
         {
           heading: "Sometimes necessity does push you forward.",
-          content: "...",
+          content: "I never thought I would end up on this world, but due to not have many opportunities in the context I was living in, I took a shot and managed to jumpstart an amazing journey. It was one of the best decisions I made and I feel that due to it I found my calling.",
         },
       ],
-      conclusion: "...",
+      conclusion: "Sometimes, the things you DON'T look for are the first you do find and vice-versa. This was one of those cases. I believe that without this job I wouldn't be here so I truly thank the opportunity I was finally given.",
     },
     tags: ["Shop Front", "Food", "Niche", "Outsourcing"],
   },
