@@ -1,7 +1,7 @@
 import { useParams, Navigate, useNavigate } from "react-router-dom";
 import ProjectCard from "@/components/ProjectCard";
 import { getProjectById, getRelatedProjects } from "@/data/Project";
-import { Facebook, Twitter, Linkedin, Link2, ArrowLeft, Mail } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Link2, Mail, Github, Globe} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
@@ -43,7 +43,7 @@ const Project = () => {
         </div>
 
         <div className="max-w-5xl mx-auto px-8 sm:-mt-60 -mt-16 relative">
-          {/* Project Header */}
+{/* Project Header */}
           <div className="mb-12 animate-slide-up">
             <div className="flex items-center gap-3 mb-6">
               <span className={`py-2 px-3 rounded-full text-sm font-medium ${getCategoryClass(project.category)}`}>{project.category}</span>
@@ -52,15 +52,11 @@ const Project = () => {
               <span className="text-sm text-muted-foreground">{project.readTime} read</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
-              {project.title}
-            </h1>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">{project.title}</h1>
             
-            <p className="text-xl text-muted-foreground mb-8">
-              {project.subtitle}
-            </p>
+            <p className="text-xl text-muted-foreground mb-8">{project.subtitle}</p>
 
-            {/* Author Info */}
+{/* Author Info */}
             <div className="flex items-center justify-between border-t border-b border-border py-6">
               <div className="flex items-center gap-4">
                 <img src={project.author.avatar} className="w-14 h-14 rounded-full object-cover"/>
@@ -75,25 +71,20 @@ const Project = () => {
                   className="w-10 h-10 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center">
                   <Link2 className="w-4 h-4" />
                 </button>
-                <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(project.title)}&url=${encodeURIComponent(window.location.href)}`} target="_blank"
-                  rel="noopener noreferrer"
+                <a href={project.gitHub} target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center">
-                  <Twitter className="w-4 h-4" />
+                  <Github className="w-4 h-4" />
                 </a>
-                <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`} target="_blank" rel="noopener noreferrer"
+                <a href={project.webpage} target="_blank" rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center">
-                  <Facebook className="w-4 h-4" />
-                </a>
-                <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`} target="_blank" rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center">
-                  <Linkedin className="w-4 h-4" />
+                  <Globe className="w-4 h-4" />
                 </a>
               </div>
             </div>
           </div>
 
 {/* Project Content */}
-          <div className="prose prose-lg max-w-none mb-16 animate-slide-up stagger-2">
+          <div className="max-w-none mb-16 animate-slide-up stagger-2">
             <p className="text-lg leading-relaxed text-muted-foreground mb-8 text-justify">{project.content.introduction}</p>
 
             {project.content.sections.map((section, index) => (
@@ -122,18 +113,16 @@ const Project = () => {
             <p className="text-sm font-semibold mb-4">Share this project</p>
             <div className="flex items-center gap-3">
               <button onClick={handleCopyLink}
-                className="flex-1 py-3 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center gap-2">
-                <Link2 className="w-4 h-4" />
-                <span className="text-sm">Copy link</span>
+                className="flex-1 py-3 rounded-full border border-border flex items-center justify-center gap-2">
+                <Link2 className="w-4 h-4" /> <span className="text-sm">Copy link</span>
               </button>
-              <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(project.title)}&url=${encodeURIComponent(window.location.href)}`} target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center">
-                <Twitter className="w-4 h-4" />
-              </a>
-              <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`} target="_blank" rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full border border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center">
-                <Facebook className="w-4 h-4" />
+                <a href={project.gitHub} target="_blank" rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full border border-border flex items-center justify-center">
+                  <Github className="w-4 h-4" />
+                </a>
+                <a href={project.webpage} target="_blank" rel="noopener noreferrer"
+                  className="w-12 h-12 rounded-full border border-border flex items-center justify-center">
+                  <Globe className="w-4 h-4" />
               </a>
             </div>
           </div>

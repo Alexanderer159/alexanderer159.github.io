@@ -6,6 +6,8 @@ export interface Project {
   date: string;
   readTime: string;
   image: string;
+  gitHub: string;
+  webpage: string;
   author: {
     name: string;
     avatar: string;
@@ -31,6 +33,8 @@ export const projects: Project[] = [
     date: "December, 2025",
     readTime: "5 min",
     image: "/projects/Exzellent-portfolio.jpeg",
+    gitHub:"https://github.com/EXZELLENT/exzellent-frontend",
+    webpage:"https://www.exzellent.co/",
     author: {
       name: "Alejandro De Yavorsky",
       avatar: "/assets/CV-Photo.png",
@@ -40,19 +44,19 @@ export const projects: Project[] = [
       introduction: "Did a full re-design of the page, had to redo all the pages and functionalities to better appeal to customers and teachers, it has been my favorite project to work on up until today, it has put me on check many times and made me learn more each day.",
       sections: [
         {
-          heading: "Story",
+          heading: "The story.",
           content: "Exzellent is a startup founded by Riyabrata Mondal, my boss. It envisions a platform where teachers and students are able to easily interact and take away the potential annoyances of other platforms. It has been slowly but surely becoming a more grounded project, each day that passes feels like a stroke of paint I have placed on it, in the end the whole picture looks cohesive and fun.",
         },
         {
-          heading: "The team",
+          heading: "The team.",
           content: "I worked mostly on the Front End of the page, while my partner Walid Khrouf was on the Back End, also with the help of Saurabhi Raut as product manager we were able to better organize and meet deadlines a LOT faster than working alone us two. I believe communication was CRITICAL and people here delivered on that front, making the job a lot more manageable and efficient.",
         },
         {
-          heading: "What sets this product appart?",
+          heading: "What sets this product apart?",
           content: "Now, you most likely now many platforms to learn languages, however, this project aims to incorporate AI, not to replace teachers, but to offload the tasks of repetition and annoyances, such as capturing accents, misspells and other issues when learning a language, leaving teachers just with the task of showing new subjects and later testing students.",
         },
         {
-          heading: "Great bang for your buck",
+          heading: "Great bang for your buck.",
           content: "The way the site is set up, you are able to get a plan which offers a lot of value, being able to learn a whole level of a language (From A1 up to C2), access to AI, tutoring from a teacher, help on tests and a lot more for just an entry fee, not many platforms give this much. I believe this product has a lot of potential, just needs to find the right partners.",
         },
       ],
@@ -68,34 +72,36 @@ export const projects: Project[] = [
     date: "November, 2025",
     readTime: "5 min",
     image: "/projects/LC-portfolio.jpeg",
+    gitHub:"https://github.com/Latam-Connect/congress-spark",
+    webpage:"https://github.com/Latam-Connect/congress-spark",
     author: {
       name: "Alejandro De Yavorsky",
       avatar: "/assets/CV-Photo.png",
       bio: "UI / UX Designer & Front-End Developer",
     },
     content: {
-      introduction: "In a world of financial noise and conflicting advice, sometimes the wisest course of action is to listen to the whispers—those quiet moments of clarity that cut through the chaos. Financial planning isn't just about numbers; it's about understanding your values and aligning your resources with what truly matters.",
+      introduction: "On this case, I was provided an already started project made in lovable and was given the task to improve the user experience and the interface of the page. It was a very generic looking page as the main focus was to create a sketch and later have someone who knows how to tackle the task make it more marketable.",
       sections: [
         {
-          heading: "The Power of Quiet Reflection",
-          content: "Before making any major financial decision, we often rush to consume more information, read more projects, or seek more advice. Yet the most profound insights often come when we step back and simply reflect. Taking time for quiet contemplation allows us to connect with our deeper values and understand what financial security truly means to us—not what society tells us it should mean.",
+          heading: "The story.",
+          content: "The startup was concieved by Miguel Carrone, he envisioned a company that provided outside talent from Latin America to companies and startups from Europe (Hence the name LATAM Connect), the project had past members that had left the groundwork for a functioning database in azure and a github repository with what we needed to keep on building.",
         },
         {
-          heading: "Building Financial Awareness",
-          content: "True financial wisdom begins with awareness. This means honestly assessing where you are, understanding your patterns and behaviors around money, and recognizing the emotional drivers behind your financial decisions. It's not about judgment, but about clear-eyed observation. When we can see our financial reality clearly, we're empowered to make intentional changes.",
+          heading: "The team.",
+          content: "The team was divided into 3 major groups, we had the people in charge of setting up Azure, which is how I met Jose Manuel Sepulveda, we also had a team dedicated to retrieve data and organize it which is how I met Melanie Medigovich, Radharani Dorta and Jose Luis Macias, lastly, the Front-End was left all to me. Thanks to daily meetings we could divide tasks and see in what point we were at the moment.",
         },
         {
-          heading: "Small Steps, Lasting Change",
-          content: "The whispers of wisdom often guide us toward small, sustainable actions rather than dramatic overhauls. Perhaps it's automating a small savings contribution, or finally organizing your financial documents, or having that honest conversation about money with your partner. These quiet actions, consistently applied, create profound change over time.",
+          heading: "What sets this product apart?",
+          content: "In the late years, I have personally seen how many projects have arisen in Europe that desperately need capable hands on deck, with the amount of people in Latin America that desperately need a job that helps them hae a better life quality, it feels like an obvious trade and kind of surprises me not many companies exist that provide this service. With the help of AI, we will give you the BEST candidates for the job offers you provide.",
         },
         {
-          heading: "Values-Based Financial Planning",
-          content: "When we align our financial decisions with our core values, money becomes a tool for creating the life we want rather than a source of stress and confusion. Ask yourself: What do I truly value? How can my financial choices support those values? The answers to these questions are your compass in navigating financial decisions.",
+          heading: "You got the goods? We got the people to make them better.",
+          content: "People around the world are eager to find opportunities to sink their teeth in, mane capable people are not taken into account because of not even knowing they are there, LinkedIn tries to bridge that gap, but having an active agent actually bringing said people to you is MUCH more convenient.",
         },
       ],
-      conclusion: "Financial wisdom isn't found in the loudest voices or the most complex strategies. It's discovered in quiet moments of reflection, in the gentle guidance of your values, and in the consistent application of simple, intentional actions. Listen to the whispers—they often speak the deepest truths.",
+      conclusion: "Problems arise in life and its up to us how to tackle them, we could lay down and not do anything about it or we can get to the task and get it over with, this project taught me the importance of consistency and being able to visualize a goal.",
     },
-    tags: ["financial planning", "mindfulness", "personal finance", "values"],
+    tags: ["Tech", "Connection", "Talent", "International", "Startup"],
   },
   {
     id: "003",
@@ -105,34 +111,36 @@ export const projects: Project[] = [
     date: "July, 2025",
     readTime: "5 min",
     image: "/projects/Soundstagram-portfolio.jpeg",
+    gitHub:"https://github.com/Alexanderer159/Soundstagram",
+    webpage:"https://soundstagram.onrender.com/",
     author: {
       name: "Alejandro De Yavorsky",
       avatar: "/assets/CV-Photo.png",
       bio: "Front-End Developer",
     },
     content: {
-      introduction: "In a world of financial noise and conflicting advice, sometimes the wisest course of action is to listen to the whispers—those quiet moments of clarity that cut through the chaos. Financial planning isn't just about numbers; it's about understanding your values and aligning your resources with what truly matters.",
+      introduction: "Projects born from passion just hit different when they are made. They don't necessarily bring all the bells and whistles a big company can give, but the palpable sense of something huge is undeniable.",
       sections: [
         {
-          heading: "The Power of Quiet Reflection",
-          content: "Before making any major financial decision, we often rush to consume more information, read more projects, or seek more advice. Yet the most profound insights often come when we step back and simply reflect. Taking time for quiet contemplation allows us to connect with our deeper values and understand what financial security truly means to us—not what society tells us it should mean.",
+          heading: "The Story.",
+          content: "This passion project was born from Adrián Torres, a developer that wanted to make music with his brother, but due to the distance, they couldn't. The fact that no program, utility or page gave an even close service to what he was looking for, he presented the idea to me and another fellow programmer. We did it for fun and to learn a little more what we could do together in just one month.",
         },
         {
-          heading: "Building Financial Awareness",
-          content: "True financial wisdom begins with awareness. This means honestly assessing where you are, understanding your patterns and behaviors around money, and recognizing the emotional drivers behind your financial decisions. It's not about judgment, but about clear-eyed observation. When we can see our financial reality clearly, we're empowered to make intentional changes.",
+          heading: "The team.",
+          content: "All 3 of the people involved here had a little dip into all aspects of it since we were all doing it for ourselves, however Adrián always was always leaning more into providing new functionalities and ideas, then we had Antonio Barroso (Toni) Who loved more of the backend side and was amazing at it, while, as per usual, I was more into the front end and designing, which I love. We had an amazing time together and we always saw eye to eye in all issues the project needed tackled.",
         },
         {
-          heading: "Small Steps, Lasting Change",
-          content: "The whispers of wisdom often guide us toward small, sustainable actions rather than dramatic overhauls. Perhaps it's automating a small savings contribution, or finally organizing your financial documents, or having that honest conversation about money with your partner. These quiet actions, consistently applied, create profound change over time.",
+          heading: "What sets this project apart?",
+          content: "It is a social media platform that is dedicated to make music together, one person can do the bass, while another does the guitar and another the drums. It is a super original idea that I have never seen tried before. Even though you can tell it was made in a rush and the backend is no longer working due to us not paying for it, you will definitely see the passion we had for it.",
         },
         {
-          heading: "Values-Based Financial Planning",
-          content: "When we align our financial decisions with our core values, money becomes a tool for creating the life we want rather than a source of stress and confusion. Ask yourself: What do I truly value? How can my financial choices support those values? The answers to these questions are your compass in navigating financial decisions.",
+          heading: "What are we doing today?",
+          content: "This project was the first time I ever programmed and designed not for a job, but for the fun of it and because I liked doing it. No other project has been like this one up until now, and the fun that we had doing it is incomparable with anything. When things worked, the high we got out of them was incredible.",
         },
       ],
-      conclusion: "Financial wisdom isn't found in the loudest voices or the most complex strategies. It's discovered in quiet moments of reflection, in the gentle guidance of your values, and in the consistent application of simple, intentional actions. Listen to the whispers—they often speak the deepest truths.",
+      conclusion: "Not all that glitters is gold, we learned that on this project since we didn't get anything out of it other than fun, and I believe that is far more valuable than any amount of money. I cherish time more than gold.",
     },
-    tags: ["financial planning", "mindfulness", "personal finance", "values"],
+    tags: ["For Fun", "POC", "Social", "Music"],
   },
    {
     id: "004",
@@ -142,34 +150,36 @@ export const projects: Project[] = [
     date: "July, 2024",
     readTime: "5 min",
     image: "/projects/BoxNCase-portfolio.jpeg",
+    gitHub:"https://github.com/Alexanderer159",
+    webpage:"https://boxncase.com/",
     author: {
       name: "Alejandro De Yavorsky",
       avatar: "/assets/CV-Photo.png",
       bio: "Front-End Developer",
     },
     content: {
-      introduction: "In a world of financial noise and conflicting advice, sometimes the wisest course of action is to listen to the whispers—those quiet moments of clarity that cut through the chaos. Financial planning isn't just about numbers; it's about understanding your values and aligning your resources with what truly matters.",
+      introduction: "It's not many times you do something for the first time, and much less without any experience. First time programming.",
       sections: [
         {
-          heading: "The Power of Quiet Reflection",
-          content: "Before making any major financial decision, we often rush to consume more information, read more projects, or seek more advice. Yet the most profound insights often come when we step back and simply reflect. Taking time for quiet contemplation allows us to connect with our deeper values and understand what financial security truly means to us—not what society tells us it should mean.",
+          heading: "The story.",
+          content: "...",
         },
         {
-          heading: "Building Financial Awareness",
-          content: "True financial wisdom begins with awareness. This means honestly assessing where you are, understanding your patterns and behaviors around money, and recognizing the emotional drivers behind your financial decisions. It's not about judgment, but about clear-eyed observation. When we can see our financial reality clearly, we're empowered to make intentional changes.",
+          heading: "The team.",
+          content: "...",
         },
         {
-          heading: "Small Steps, Lasting Change",
-          content: "The whispers of wisdom often guide us toward small, sustainable actions rather than dramatic overhauls. Perhaps it's automating a small savings contribution, or finally organizing your financial documents, or having that honest conversation about money with your partner. These quiet actions, consistently applied, create profound change over time.",
+          heading: "What sets this project appart?",
+          content: "...",
         },
         {
-          heading: "Values-Based Financial Planning",
-          content: "When we align our financial decisions with our core values, money becomes a tool for creating the life we want rather than a source of stress and confusion. Ask yourself: What do I truly value? How can my financial choices support those values? The answers to these questions are your compass in navigating financial decisions.",
+          heading: "Sometimes necessity does push you forward.",
+          content: "...",
         },
       ],
-      conclusion: "Financial wisdom isn't found in the loudest voices or the most complex strategies. It's discovered in quiet moments of reflection, in the gentle guidance of your values, and in the consistent application of simple, intentional actions. Listen to the whispers—they often speak the deepest truths.",
+      conclusion: "...",
     },
-    tags: ["financial planning", "mindfulness", "personal finance", "values"],
+    tags: ["Shop Front", "Food", "Niche", "Outsourcing"],
   },
 ];
 
