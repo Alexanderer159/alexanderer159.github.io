@@ -32,7 +32,7 @@ export const projects: Project[] = [
     category: "Language",
     date: "December, 2025",
     readTime: "5 min",
-    image: "/projects/Exzellent-portfolio.jpeg",
+    image: "/projects/Exzellent-portfolio.png",
     gitHub:"https://github.com/EXZELLENT/exzellent-frontend",
     webpage:"https://www.exzellent.co/",
     author: {
