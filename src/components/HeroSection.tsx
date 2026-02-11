@@ -10,7 +10,7 @@ const navigate = useNavigate()
       <div className="grid sm:grid-cols-2 gap-6 p-6 sm:p-12">
 {/* Left side - Image */}
         <div className="aspect-[4/3] sm:aspect-auto border-2 bg-white sm:border-4 border-white rounded-md sm:max-h-[500px] overflow-hidden animate-scale-in group hover:scale-75 transition-all duration-1000 hover:rotate-45">
-          <img src="/assets/CV-Photo.png" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-150 group-hover:-rotate-45"/>
+          <img src="/assets/CV-Photo.png" className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-150 group-hover:-rotate-45 object-[center_10%]"/>
         </div>
 
 {/* Right side - Content */}
