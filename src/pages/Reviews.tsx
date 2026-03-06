@@ -10,6 +10,16 @@ const setcontentOpen = () => {
 };
 
   const review = [
+     {
+      url: "https://www.linkedin.com/in/saurabhi-raut/",
+      name: "Saurabhi Raut",
+      role: "Product Manager",
+      project: "Exzellent",
+      date: "February 12, 2026",
+      content: "Alejandro combines strong frontend engineering skills with a clear understanding of product and business objectives. He doesn’t just execute tasks, he builds solutions that align with what truly matters for users and the company. He works seamlessly with cross-functional teams, takes ownership from idea to delivery, and consistently ships high-quality work with speed and precision. His professionalism and commitment to excellence make him someone you can easily rely on.",
+      image: "assets/Saurabhi.png",
+      location: "Linked-In",
+    },
         {
       url: "https://www.linkedin.com/in/walid-khrouf/",
       name: "Walid Khrouf",
