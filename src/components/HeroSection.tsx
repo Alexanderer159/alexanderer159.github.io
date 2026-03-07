@@ -35,7 +35,7 @@ const navigate = useNavigate()
                 <Mail className="w-5 h-5" />
               </a>
 
-              <a href="https://www.linkedin.com/in/alejandro-de-yavorsky/" target="_blank"
+              <a href="https://www.linkedin.com/in/alejandro-deyavorsky/" target="_blank"
                 className="w-12 h-12 rounded-md border-2 border-border hover:border-primary hover:bg-muted transition-all flex items-center justify-center hover:scale-110 duration-500">
                 <Linkedin className="w-5 h-5" />
               </a>
