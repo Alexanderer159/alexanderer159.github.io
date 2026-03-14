@@ -20,6 +20,16 @@ const setcontentOpen = () => {
       image: "assets/Saurabhi.png",
       location: "Linked-In",
     },
+         {
+      url: "https://www.linkedin.com/in/riyabrata-mondal-83aa6117a/",
+      name: "Riyabrata Mondal",
+      role: "CEO",
+      project: "Exzellent",
+      date: "February 12, 2026",
+      content: "Alejandro as our Lead Front-End Developer at Exzellent, and his impact on our platform has been outstanding. He combines strong technical expertise with a clear product mindset, consistently delivering clean, scalable, and user-focused interfaces. In a fast-paced startup environment, Alejandro has shown true ownership, reliability, and leadership. I highly recommend him to any team looking for a dedicated and forward-thinking front-end leader.",
+      image: "assets/Riyabrata.jpg",
+      location: "Linked-In",
+    },
         {
       url: "https://www.linkedin.com/in/walid-khrouf/",
       name: "Walid Khrouf",
